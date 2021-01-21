@@ -1,6 +1,6 @@
 import { testEnvironment } from "../../jest.config"
 
-import { Email } from './email'
+import { Email } from '../../src/entities/email'
 
 describe('Email validation', () => {
     test('should not accept null strings', () => {
