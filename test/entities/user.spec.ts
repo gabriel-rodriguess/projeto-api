@@ -1,5 +1,5 @@
 
-import { User } from '../../src/entities'
+import { User } from '@/entities'
 
 
 
