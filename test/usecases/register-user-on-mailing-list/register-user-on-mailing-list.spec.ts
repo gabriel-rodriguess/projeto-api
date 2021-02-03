@@ -7,7 +7,6 @@ import { RegisterUserOnMailingList } from '@/usercases/register-user-on-mailing-
 describe('Register user on mailing list use case', () => {
     test('should add user with complete data to mailing list',async () =>{
         const users: UserData[] = []
-        console.log(users)
          const repo: UserRepository = new InMemoryUserRepository(users)
          const usecase: RegisterUserOnMailingList = new RegisterUserOnMailingList(repo)
          const name = 'any_name'
@@ -20,7 +19,6 @@ describe('Register user on mailing list use case', () => {
 
     test('should not add user with invalid email to mailing list',async () =>{
         const users: UserData[] = []
-        console.log(users)
          const repo: UserRepository = new InMemoryUserRepository(users)
          const usecase: RegisterUserOnMailingList = new RegisterUserOnMailingList(repo)
          const name = 'any_name'
@@ -33,7 +31,6 @@ describe('Register user on mailing list use case', () => {
 
     test('should not add user with invalid email to mailing list',async () =>{
         const users: UserData[] = []
-        console.log(users)
          const repo: UserRepository = new InMemoryUserRepository(users)
          const usecase: RegisterUserOnMailingList = new RegisterUserOnMailingList(repo)
          const invalidName = ''
