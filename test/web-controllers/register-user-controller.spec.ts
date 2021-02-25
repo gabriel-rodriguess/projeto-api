@@ -1,12 +1,12 @@
-import { RegisterUserOnMailingList } from '@/usercases/register-user-on-mailing-list'
+import { RegisterUserOnMailingList } from '@/usecases/register-user-on-mailing-list'
 import { HttpRequest, HttpResponse } from '@/web-controllers/ports'
 import { UserData } from '@/entities'
-import { UserRepository } from '@/usercases/register-user-on-mailing-list/ports'
-import { InMemoryUserRepository } from '@test/usecases/register-user-on-mailing-list/repository'
+import { UserRepository } from '@/usecases/register-user-on-mailing-list/ports'
+import { InMemoryUserRepository } from '@/usecases/register-user-on-mailing-list/repository'
 import { RegisterUserController } from '@/web-controllers/register-user-controller'
 import { InvalidNameError, InvalidEmailError } from '@/entities/errors'
 import { MissingParamError } from '@/web-controllers/errors/missing-param-error'
-import { UseCase } from '@/usercases/ports'
+import { UseCase } from '@/usecases/ports'
 
 describe('Register user web controller', () => {
     const users: UserData[] = []
